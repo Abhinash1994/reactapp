@@ -1,0 +1,61 @@
+.customer-dialog {
+  .edit-field {
+    padding: 0 1em;
+    margin-top: 1em;
+  }
+}
+
+.sale-detail {
+  .row-edit {
+    input {
+      // padding   : 5px;
+      text-align: center;
+    }
+  }
+
+  .unedit-row {
+    cursor: pointer;
+  }
+
+  .edit-row {
+    background-color: rgba($color: #000000, $alpha: 0.05);
+    display: contents;
+  }
+  .edit-row-block{
+    background-color: rgba($color: #000000, $alpha: 0.05);
+    display: none
+  }
+  button + button {
+    margin-left: 1em;
+  }
+
+  .label-control {
+    flex-direction: row;
+    align-items: center;
+    .label {
+      width: 115px;
+    }
+    .content {
+      padding-left: 1rem;
+      width: 65%;
+    }
+    .Project__single-value {
+      font-size: 1.5rem;
+      color: #746f6f;
+    }
+  }
+}
+
+.invoice-filter-dialog {
+  .type-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .list-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

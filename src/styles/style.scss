@@ -1,0 +1,114 @@
+@import "./base/base";
+@import "./base/utils";
+@import "./layout/header";
+@import "./layout/nav";
+@import "./component/form";
+
+html {
+  font-family: "Work Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial,
+    sans-serif;
+  // font-size: 12px;
+}
+
+.emoji-picker {
+  background-color: $bg_picker;
+  width: $width_picker + 5px;
+  display: block;
+  position: relative;
+  padding: 0;
+  border: 1px solid $border_emoji_picker;
+  border-radius: 3px;
+  overflow: hidden;
+
+  .hidden {
+    display: none !important;
+    visibility: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  a {
+    outline: none;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  .bar-wrapper {
+    position: relative;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.change-row {
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($color: #000000, $alpha: 0.1);
+  }
+}
+
+.custom-avatar {
+  background: none !important;
+  color: aliceblue;
+}
+
+.text-transform-none {
+  text-transform: none;
+}
+
+th,
+td {
+  padding: 1px 5px !important;
+  font-weight: 600 !important;
+}
+
+th {
+  font-weight: 600 !important;
+}
+
+.color-brown {
+  color: brown;
+}
+
+.color-limegreen {
+  color: limegreen;
+}
+
+.color-crimson {
+  color: crimson;
+}
+
+.color-chartreuse {
+  color: chartreuse;
+}
+
+.no-padding-select > div > div > div {
+  min-width: 100px;
+  padding: 10px;
+  padding-right: 25px;
+}
+
+.no-padding-input {
+  input {
+    padding: 10px;
+    text-align: left;
+    min-width: 50px;
+  }
+}
+
+.logo-text {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 7px #fff, 0 0 20px #88dfff,
+    0 0 35px #68ffc8, 0 0 40px #68ffc8, 0 0 50px #68ffc8, 0 0 75px #68ffc8;
+}

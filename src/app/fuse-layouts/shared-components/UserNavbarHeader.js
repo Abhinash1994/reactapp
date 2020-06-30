@@ -1,0 +1,60 @@
+import React from 'react';
+import {AppBar, Avatar, Typography, withStyles} from '@material-ui/core';
+import connect from 'react-redux/es/connect/connect';
+import classNames from 'classnames';
+
+const styles = theme => ({
+    root  : {
+        '& .user': {
+            '& .username, & .email': {
+                transition: theme.transitions.create('opacity', {
+                    duration: theme.transitions.duration.shortest,
+                    easing  : theme.transitions.easing.easeInOut
+                })
+            }
+        }
+    },
+    avatar: {
+        width     : 0,
+        height    : 0,
+        position  : 'absolute',
+        top       : 2,
+        padding   : 8,
+        background: theme.palette.background.default,
+        boxSizing : 'content-box',
+        left      : '50%',
+        transform : 'translateX(-50%)',
+        '& > img' : {
+            borderRadius: '50%'
+        }
+    }
+});
+
+const UserNavbarHeader = ({user, classes}) => {
+    return (
+        <AppBar
+            position="static"
+            color="primary"
+            elevation={0}
+            classes={{root: classes.root}}
+            className="user relative flex flex-col items-center justify-center pt-5 pb-12 mb-8 z-0"
+        >
+            <Typography className="username text-16 whitespace-no-wrap" color="inherit">{user.user_name}</Typography>
+            <Typography className="email text-13 mt-8 opacity-50 whitespace-no-wrap" color="inherit">{user.email}</Typography>
+            <Avatar
+                className={classNames(classes.avatar, "avatar")}
+                alt="user photo"
+                src={user.avatar && user.avatar !== '' ? user.avatar : "assets/images/avatars/profile.jpg"}
+            />
+        </AppBar>
+    );
+};
+
+function mapStateToProps({fuse, auth})
+{
+    return {
+        user: auth.user
+    }
+}
+
+export default withStyles(styles, {withTheme: true})(connect(mapStateToProps)(UserNavbarHeader));

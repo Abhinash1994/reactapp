@@ -1,0 +1,57 @@
+.product-service-page {
+
+  th,
+  td {
+    padding: 1em;
+  }
+}
+
+.product-service-dialog {
+  .edit-field {
+    padding: 0 1em;
+    margin-top: 1em;
+  }
+
+  .show-image {
+    img {
+      cursor         : pointer;
+      width          : 94px;
+      height         : 94px;
+      border-radius  : 1em;
+      border         : 1px solid rgba(0, 0, 0, 0.2);
+      display        : flex;
+      justify-content: center;
+      margin         : 0 auto;
+      margin-top     : 4px;
+      align-items    : center;
+    }
+  }
+}
+.product-type-filter-dialog {
+  .content {
+    min-width: 500px;
+
+    .show-type {
+      margin-top     : 1em;
+      display        : flex;
+      justify-content: flex-start;
+
+      .title {
+        display        : flex;
+        justify-content: flex-start;
+      }
+    }
+
+    .type-content {
+      display  : flex;
+      flex-wrap: wrap;
+
+      .type {
+        display        : flex;
+        justify-content: flex-start;
+        padding-left   : 3em;
+        width          : 50%;
+      }
+    }
+  }
+}

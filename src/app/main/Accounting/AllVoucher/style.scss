@@ -1,0 +1,55 @@
+.all-voucher-header {
+  .search-date-content {
+    justify-content: space-between;
+  }
+}
+
+.all-voucher-filter-dialog {
+  .dialog {
+    //min-width: 148px;
+    padding: 1rem;
+
+    .list-user {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .list-date {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .show-event {
+      margin-top: 1em;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0 1rem;
+
+      .title {
+        display: flex;
+        justify-content: flex-start;
+      }
+      // label {
+      //   span {
+      //     padding: 0.5rem 0.5rem 0.5rem 1rem;
+      //   }
+      // }
+    }
+
+    .event-content {
+      display: flex;
+      flex-wrap: wrap;
+
+      .event {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 3em;
+        width: 50%;
+      }
+    }
+    .content {
+      min-width: 148px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.company-page {
+
+  td,
+  th {
+    padding: 1em;
+  }
+}
+
+.company-dialog {
+  .edit-field {
+    padding: 0 1em;
+  }
+
+  img {
+    cursor         : pointer;
+    width          : 94px;
+    height         : 94px;
+    border-radius  : 1em;
+    border         : 1px solid rgba(0, 0, 0, 0.2);
+    display        : flex;
+    justify-content: center;
+    margin         : 0 auto;
+    margin-top     : 4px;
+    align-items    : center;
+  }
+
+  .file-upload {
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+.chartodaccount-filter-dialog {
+    .content {
+      min-width: 500px;
+      .show-event {
+        margin-top     : 1em;
+        display        : flex;
+        justify-content: flex-start;
+  
+        .title {
+          display        : flex;
+          justify-content: flex-start;
+        }
+      }
+  
+      .event-content {
+        display  : flex;
+        flex-wrap: wrap;
+  
+        .event {
+          display        : flex;
+          justify-content: flex-start;
+          padding-left   : 3em;
+          width          : 50%;
+        }
+      }
+    }
+  }

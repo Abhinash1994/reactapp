@@ -1,0 +1,45 @@
+.user-log-header {
+  .search-date-content {
+    justify-content: space-between;
+  }
+}
+
+.user-log-filter-dialog {
+  .content {
+    // min-width: 500px;
+
+    .list-user {
+      display        : flex;
+      justify-content: flex-start;
+    }
+
+    .list-date {
+      display        : flex;
+      flex-direction : row;
+      justify-content: space-between;
+    }
+
+    .show-event {
+      margin-top     : 1em;
+      display        : flex;
+      justify-content: flex-start;
+
+      .title {
+        display        : flex;
+        justify-content: flex-start;
+      }
+    }
+
+    .event-content {
+      display  : flex;
+      flex-wrap: wrap;
+
+      .event {
+        display        : flex;
+        justify-content: flex-start;
+        padding-left   : 3em;
+        width          : 50%;
+      }
+    }
+  }
+}

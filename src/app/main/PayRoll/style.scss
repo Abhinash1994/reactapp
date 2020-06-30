@@ -1,0 +1,15 @@
+.employee-info-page {
+    padding: 1em;
+
+    .panel-header {
+        background: rgb(10, 143, 185);
+        background: linear-gradient(60deg, rgba(10, 143, 185, 1) 0%, rgba(8, 120, 149, 1) 20%, rgba(4, 180, 221, 1) 40%, rgba(8, 143, 173, 1) 60%, rgba(2, 191, 231, 1) 80%, rgba(0, 212, 255, 1) 100%);
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: aliceblue;
+        }
+    }
+}

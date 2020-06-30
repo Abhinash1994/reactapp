@@ -1,0 +1,91 @@
+#clock {
+  transform: scale(.8);
+}
+
+// body {
+//   font-family: 'roboto';
+//   font-weight: 400;
+//   background :
+//     /* On "top" */
+//     repeating-linear-gradient(45deg,
+//       transparent,
+//       transparent 4px,
+//       #171717 4px,
+//       black 8px),
+//     /* on "bottom" */
+//     linear-gradient(to bottom,
+//       #171717,
+//       black);
+//   background-repeat    : no-repeat;
+//   background-attachment: fixed;
+// }
+
+.outer {
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  right: 1em;
+  .most-inner {
+    position: relative;
+    top     : 0;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 7px #fff,
+      0 0 20px #88dfff,
+      0 0 35px #68ffc8,
+      0 0 40px #68ffc8,
+      0 0 50px #68ffc8,
+      0 0 75px #68ffc8;
+
+    .time {
+      color     : white;
+      font-size : 20px;
+      position  : relative;
+      display   : block;
+      margin-top: 0px;
+    }
+
+    .amPm {
+      position   : relative;
+      display    : block;
+      width      : 20px;
+      margin-left: 55px;
+      margin-top : -5px;
+      color      : white;
+      font-size  : 12px;
+    }
+  }
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shadowFade {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.1;
+  }
+}
+
+.blink {
+  animation: blinking .5s infinite
+}

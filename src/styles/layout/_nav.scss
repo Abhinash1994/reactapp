@@ -1,0 +1,14 @@
+.left-navbar {
+  background-color: rgb(18, 18, 18);
+  left: 0;
+  .nav-header {
+    background-color: transparent;
+  }
+  .navigation {
+    .open {
+      .list-item-text-primary {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

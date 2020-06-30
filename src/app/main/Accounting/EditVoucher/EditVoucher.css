@@ -1,0 +1,30 @@
+.newRowButton {
+  margin-top: 23px;
+  margin-right: 10px;
+}
+
+.voucherCrudBtn {
+  margin: 5px;
+}
+/* 
+.MuiSelect-root-688 {
+    height: 39px !important;
+}
+
+.dropDownHeight>div>div {
+    height: 39px !important;
+}
+
+.dropDownHeight>div>div>div {
+    height: 39px !important;
+    padding: 10px;
+} */
+
+.voucher-remarks {
+  align-items: center;
+  width: 450px;
+}
+.voucher-remarks .content {
+  padding-left: 1rem;
+  width: 100%;
+}

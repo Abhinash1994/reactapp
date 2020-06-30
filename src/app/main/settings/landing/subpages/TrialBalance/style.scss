@@ -1,0 +1,46 @@
+.trial-balance {
+  .list-item {
+    font-size : 16px;
+    cursor    : pointer;
+    margin-top: 1em;
+
+    .label {
+      margin-left: 2em;
+      position   : relative;
+      display    : flex;
+      user-select: none;
+
+      &.line-bottom {
+        border-bottom: 1px solid steelblue;
+      }
+
+      .icon {
+        position: absolute;
+        top     : 0;
+        left    : -1.5em;
+      }
+
+      .title {
+        flex: 1;
+      }
+
+      .debit,
+      .credit,
+      .is-debit {
+        flex      : 0 0 100px;
+        text-align: right;
+      }
+    }
+
+
+    .sub-list {
+      padding-left: 1em;
+    }
+  }
+}
+
+.print-export-buttons {
+  display        : flex;
+  flex           : 1;
+  justify-content: flex-end;
+}

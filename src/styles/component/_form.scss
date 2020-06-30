@@ -1,0 +1,11 @@
+.label-control {
+  input,
+  [class^="MuiSelect-select"] {
+    padding: 0.8rem;
+  }
+  .content {
+    [class^="MuiFormControl-root"] {
+      width: 100%;
+    }
+  }
+}
