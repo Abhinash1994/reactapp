@@ -93,7 +93,7 @@
     "cross-env": "5.2.0",
     "globby": "^9.2.0",
     "js-beautify": "1.8.9",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "postcss-cli": "6.1.1",
     "tailwindcss": "0.7.3",
     "webpack-bundle-analyzer": "^3.6.0"
