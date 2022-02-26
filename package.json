@@ -38,7 +38,7 @@
     "path-to-regexp": "2.4.0",
     "pdfmake": "^0.1.64",
     "perfect-scrollbar": "1.4.0",
-    "prismjs": "1.15.0",
+    "prismjs": "1.27.0",
     "qs": "6.6.0",
     "raw-loader": "1.0.0",
     "react": "^16.13.1",
